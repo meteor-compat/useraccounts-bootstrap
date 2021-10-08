@@ -1,6 +1,13 @@
-[![Meteor Icon](http://icon.meteor.com/package/useraccounts:bootstrap)](https://atmospherejs.com/useraccounts/bootstrap)
-[![Build Status](https://travis-ci.org/meteor-useraccounts/bootstrap.svg?branch=master)](https://travis-ci.org/meteor-useraccounts/bootstrap)
+# Compatibility
 
+**Compatible with Meteor 2.4**
+
+This repository provides versions for the package [useraccounts:bootstrap](https://github.com/meteor-compat/useraccounts-bootstrap/) that are compatible with latest Meteor. This is necessary because the author is not maintaining package anymore.
+
+## Changes
+- v1.15.0
+    - `api.versionsFrom` on `Package.onUse` was changed from `1.0.3` to `2.4`.
+      
 # useraccounts:bootstrap
 
 Meteor sign up and sign in templates (and much more!) styled for twitter Bootstrap
