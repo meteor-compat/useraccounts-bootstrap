@@ -5,6 +5,8 @@
 This repository provides versions for the package [useraccounts:bootstrap](https://github.com/meteor-compat/useraccounts-bootstrap/) that are compatible with latest Meteor. This is necessary because the author is not maintaining package anymore.
 
 ## Changes
+- v1.15.3
+    - Made compatible with Meteor v3.0 and `useraccounts:core@1.16.3`.
 - v1.15.0
     - `api.versionsFrom` on `Package.onUse` was changed from `1.0.3` to `2.4`.
       
