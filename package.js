@@ -9,12 +9,12 @@ Package.onUse(function(api, where) {
   api.versionsFrom(['METEOR@2.4', 'METEOR@3.0-beta.0']);
 
   api.use([
-    'templating',
+    'templating@1.4.3||1.4.4-alpha300.17',
     'underscore',
   ], 'client');
 
   api.use([
-    'useraccounts:core@1.15.0||1.16.3',
+    'useraccounts:core@1.15.0||1.16.3||1.17.1',
   ], ['client', 'server']);
 
   // Requires all routing packages loads before this asking for weak dependencies.
@@ -70,7 +70,7 @@ Package.onUse(function(api, where) {
 Package.onTest(function(api) {
   api.use([
     'useraccounts:bootstrap',
-    'useraccounts:core@1.15.0||1.16.3',
+    'useraccounts:core@1.15.0||1.16.3||1.17.1',
   ]);
 
   api.use([
