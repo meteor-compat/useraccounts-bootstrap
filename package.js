@@ -1,20 +1,20 @@
 Package.describe({
   summary: 'Accounts Templates styled for Twitter Bootstrap.',
-  version: '1.15.0',
+  version: '1.15.3',
   name: 'useraccounts:bootstrap',
   git: 'https://github.com/meteor-compat/useraccounts-bootstrap',
 });
 
 Package.onUse(function(api, where) {
-  api.versionsFrom('METEOR@2.4');
+  api.versionsFrom(['METEOR@2.4', 'METEOR@3.0-beta.0']);
 
   api.use([
-    'templating@1.4.1',
-    'underscore@1.0.10',
+    'templating',
+    'underscore',
   ], 'client');
 
   api.use([
-    'useraccounts:core',
+    'useraccounts:core@1.15.0||1.16.3',
   ], ['client', 'server']);
 
   // Requires all routing packages loads before this asking for weak dependencies.
@@ -22,7 +22,7 @@ Package.onUse(function(api, where) {
   api.use('useraccounts:iron-routing@1.14.2', ['client', 'server'], {weak: true});
 
   api.imply([
-    'useraccounts:core@1.15.0',
+    'useraccounts:core',
   ], ['client', 'server']);
 
   api.addFiles([
@@ -70,7 +70,7 @@ Package.onUse(function(api, where) {
 Package.onTest(function(api) {
   api.use([
     'useraccounts:bootstrap',
-    'useraccounts:core@1.15.0',
+    'useraccounts:core@1.15.0||1.16.3',
   ]);
 
   api.use([
